@@ -1,6 +1,21 @@
 h1{
     font-style: italic;
+    text-align: center
 }
 p{
-    background-color: burlywood;
+    background-color: rgb(135, 222, 215);
+}
+body{
+    background-color: darkslategray;
+}
+.container{
+    background-color: dimgrey;
+}
+.footer{
+    text-align: center;
+    padding-top: 10px;
+}
+
+label{
+    background-color: rgb(27, 155, 65);
 }
