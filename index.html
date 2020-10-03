@@ -19,37 +19,44 @@
                 <form>
                     <div class="form-group">
                       <label for="exampleInputCentuary">Centuary</label>
-                      <input type="number" class="form-control" placeholder="for example 19" id="century" required min="1"
+                      <input type="number" class="form-control" placeholder="for example 19" id="centuary" value="cc" required min="1"
                     max="30">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputYear">Year</label>
-                        <input type="number" class="form-control" placeholder="for example 90" id="Year" required min="1"
+                        <input type="number" class="form-control" placeholder="for example 90" id="year" value="yy" required min="1"
                       max="100">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputMonth">Month</label>
-                        <input type="number" class="form-control" placeholder="for example 12" id="month" required min="1"
+                        <input type="number" class="form-control" placeholder="for example 12" id="month" value="" required min="1"
                       max="12">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputDayBirth">Day of birth</label>
-                        <input type="DayofBirth" class="form-control"  id="DayofBirth" required min="0"
+                        <input type="DayofBirth" class="form-control"  id="day" value="" required min="0"
                       max="12">
                     </div>
-                    <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Select gender</label>
+                        <div class="col-sm-10">
+                        <select class="form-control " id="gender">
+                          <option value=""></option>
+                          <option> Male</option>
+                          <option>Female</option>
+                        </select>
+                        </div>
+                    </div>
+                    <!-- <form>
                         <input type="radio" id="male" name="gender" value="male">
                         <label for="male">Male</label><br>
                         <input type="radio" id="female" name="gender" value="female">
                         <label for="female">Female</label><br>
-                      </form>
+                      </form> -->
                       <form> 
-                      <a href="#result"><button type="button" class="btn btn-outline-primary" name="button"
-                        onclick="checkDayOfWeek();">Submit</button></a>
+                        <button onclick="getName()" type="submit" class="btn btn-succes" >submit</button>
                       <button type="unload" onclick="window.location.reload();" class="btn btn-outline-danger">Unload</button>
                       </form>
-                    
-                    <!-- <button type="submit" class="btn btn-primary" onclick="getName()">Submit</button> -->
                     
                   </form>
 
@@ -60,6 +67,6 @@
             <p> Towett Enock K</p>
         </div>
     </footer>
-    <script src="main.js"></script>
+<script src="./main.js"></script>
 </body>
 </html>
