@@ -25,9 +25,11 @@ function getName(){
  }
  else  
 if ( gender === "Male")  {
-alert( "your akan name is " + maleNames[d])
+     alert( "your akan name is " + maleNames[d])
     
-} else {
-    alert( "your akan name is " + femaleNames[d])
+} 
+ else 
+if (gender==="Female") {
+     alert( "your akan name is " + femaleNames[d])
 }
 }
