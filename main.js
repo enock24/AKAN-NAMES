@@ -1,5 +1,5 @@
-var maleNames =["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
-var femaleNames =["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
+var maleNames =["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+var femaleNames =["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 
 function getName(){
@@ -14,21 +14,20 @@ function getName(){
     var mm= month;
     var dd= day;
     var d =parseInt(((cc/4) -2*cc-1 ) + (5*yy/4) + (26*(mm+1)/10)+ dd ) % 7
-    alert(d)
+ if ((month<= 0) || (month> 12)  ){
+     alert("oops!! enter a valid month")
 
-if(day<=0||day>31)
-alert("Oops!please enter a valid day");
-else if(month<0||month>12 ||month==2 &&day>29)
-else if(month<0||month>12 ||month ==2 && day>29)
-alert("Oops!please enter a valid month");
-
-var day = new Date(year + "/" + month + "/" + day);
-var birthDay=day.getDay();
-if(male.checked==true){
-   alert("You were born on " +daysOfWeek[birthDay]+ " and your akan name is " + maleNames[birthDay])
-}
-else if(female.checked==true){
-   alert("You were born on " +daysOfWeek[birthDay]+ " and your akan name is " + femaleNames[birthDay])
-}
+ } 
+ else
+ if ((day<=0) || (day>31)) {
+     alert("oops!! enter a valid day")
+     
+ }
+ else  
+if ( gender === "Male")  {
+alert( "your akan name is " + maleNames[d])
+    
+} else {
+    alert( "your akan name is " + femaleNames[d])
 }
 }
