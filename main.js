@@ -3,13 +3,13 @@ var femaleNames =["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 
 function getName(){
-    var centuary = parseInt(document.getElementById("centuary").value);
+    var century = parseInt(document.getElementById("century").value);
     var year= parseInt(document.getElementById("year").value);
     var month = parseInt(document.getElementById("month").value);
     var day= parseInt(document.getElementById("day").value);
     var gender = document.getElementById("gender").value;
 
-    var cc= centuary;
+    var cc= century;
     var yy= year;
     var mm= month;
     var dd= day;
