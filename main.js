@@ -6,20 +6,20 @@ function getName(){
     var century = parseInt(document.getElementById("century").value);
     var year= parseInt(document.getElementById("year").value);
     var month = parseInt(document.getElementById("month").value);
-    var day= parseInt(document.getElementById("day").value);
+    var date= parseInt(document.getElementById("date").value);
     var gender = document.getElementById("gender").value;
 
     var cc= century;
     var yy= year;
     var mm= month;
-    var dd= day;
+    var dd= date;
     var d =parseInt(((cc/4) -2*cc-1 ) + (5*yy/4) + (26*(mm+1)/10)+ dd ) % 7
  if ((month<= 0) || (month> 12)  ){
      alert("oops!! enter a valid month")
 
  } 
  else
- if ((day<=0) || (day>31)) {
+ if ((date<=0) || (date>31)) {
      alert("oops!! enter a valid day")
      
  }
